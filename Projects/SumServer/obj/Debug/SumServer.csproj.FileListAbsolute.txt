@@ -1,0 +1,6 @@
+D:\TEMP\CodeTag\RecruitingTest\ActivityMeter\Projects\SumServer\bin\Debug\SumServer.exe.config
+D:\TEMP\CodeTag\RecruitingTest\ActivityMeter\Projects\SumServer\bin\Debug\SumServer.exe
+D:\TEMP\CodeTag\RecruitingTest\ActivityMeter\Projects\SumServer\bin\Debug\SumServer.pdb
+D:\TEMP\CodeTag\RecruitingTest\ActivityMeter\Projects\SumServer\obj\Debug\SumServer.csprojResolveAssemblyReference.cache
+D:\TEMP\CodeTag\RecruitingTest\ActivityMeter\Projects\SumServer\obj\Debug\SumServer.exe
+D:\TEMP\CodeTag\RecruitingTest\ActivityMeter\Projects\SumServer\obj\Debug\SumServer.pdb

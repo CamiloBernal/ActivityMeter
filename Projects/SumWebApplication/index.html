@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        .console {
+            max-height: 30%;
+            height: 30%;
+            overflow: auto;
+        }
+
+        .canvasPanel {
+            margin-top: 1%;
+        }
+
+        #sumCanvas {
+            border: solid 1px #B4B4B4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" role="button" class="btn btn-info fa fa-plus-circle" id="cmdOpenServerConfigPanel"> Add new server</a>
+        <a href="#" role="button" class="btn btn-danger fa fa-stop" id="cmdDisconectChanels"> Disconect all chanels</a>
+        <div class="panel panel-info canvasPanel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sum server realtime graphic</h3>
+            </div>
+
+            <div class="panel-body">
+                <canvas id="sumCanvas" width="900" height="600">
+                    Sorry, your browser doesn't support the HTML5 Canvas element. Please use a modern browser.
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <label>Console:</label>
+    <div id="console"></div>
+    <!-- Server config Panel-->
+    <div id="serverConfigPanel" class="hidden">
+        <div class="panel  panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">New server config</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="txtReadServerPort">Read server port</label>
+                        <input type="number" class="form-control" id="txtReadServerPort"
+                               placeholder="Server port" required>
+
+                        <div class="alert alert-info" id="lblReadServerURI"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtWriteServerPort">Write server port</label>
+                        <input type="number" class="form-control" id="txtWriteServerPort"
+                               placeholder="Server port" required>
+                        <div class="alert alert-info" id="lblWriteServerURI"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="serverLineColor">
+                            Server line color
+                        </label>
+                        <input type="color" placeholder="Select server line color" id="serverLineColor" />
+                    </div>
+
+                    <a href="#" role="button" class="btn btn-primary fa fa-plus-circle" id="cmdAddServer"> Add server</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- [END]Server config Panel-->
+    <!-- Scripts -->
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.blockUI.min.js"></script>
+    <script src="Scripts/jquery.timers.js"></script>
+    <script src="Scripts/SumClient.min.js"></script>
+</body>
+</html>
